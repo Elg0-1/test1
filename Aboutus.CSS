@@ -1,0 +1,99 @@
+/* margin, padding,font settings */
+* {
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+}
+
+/* styles for nav bar */
+nav {
+  height: 80px; 
+  background: #000000; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0rem calc((100vw - 1300px) / 2); 
+}
+
+/* styles for the logo in the navbar */
+.logo {
+  color: #ffffff; 
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  font-style: italic; 
+  padding: 0 2rem; 
+}
+
+/* styles for anchor links in the navbar */
+nav a {
+  text-decoration: none; 
+  color: #ffffff; 
+  padding: 0 1.5rem; 
+}
+
+/* hover effect for navbar links */
+nav a:hover {
+  color: dodgerblue; 
+}
+
+/* about section background and padding */
+.about {
+  background: #2e2e2e; 
+  padding: 5rem 0; 
+}
+
+/* grid layout for the About section container */
+.about-container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 0rem calc((100vw - 1300px) / 2); 
+}
+
+/* Left column in the About section */
+.column-left {
+  padding: 2rem; 
+  color: #000000; 
+}
+
+/* Styles for the <h1> in the left column */
+.column-left h1 {
+  margin-bottom: 1rem; 
+  font-size: 3rem; 
+}
+
+/* styles for paragraphs in the left column */
+.column-left p {
+  margin-bottom: 1rem; 
+  font-size: 1.5rem; 
+  line-height: 1.6; 
+}
+
+/* right column in the About section */
+.column-right {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  padding: 0rem 2rem; 
+}
+
+/* styles for image in  right column */
+.about-image {
+  width: 80%; 
+  height: auto; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* responsive design  */
+@media screen and (max-width: 768px) {
+  
+  .about-container {
+      grid-template-columns: 1fr; 
+  }
+  .about-image {
+      width: 100%;
+  }
+}
